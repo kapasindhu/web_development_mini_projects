@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .login{
+            display: grid;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+
+    </style>
+    <script>
+        function logintoaccount(){
+            alert("successfully login to your account")
+
+        }
+    </script>
+
+</head>
+<body class="container-fluid">
+    <div class="login">
+        <h1>
+            Login
+        </h1>
+        <dl>
+            <dt>Email</dt>
+            <dd><input type="email" placeholder="enter email" name="email" id="email" required></dd>
+        </dl>
+        <dl>
+            <dt> 
+                <b>Password</b>
+            </dt>
+            <dd><input type="password" id="pwd" name="pwd" placeholder="enter password" required></dd>
+        </dl>
+
+        <button type="submit" class="bg-success rounded-1" onclick="logintoaccount()" >Login</button>
+    </div>
+    
+</body>
+</html>
