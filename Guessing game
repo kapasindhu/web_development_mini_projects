@@ -1,0 +1,25 @@
+const max=prompt("enter the max number ");               //max number
+console.log(max);
+
+const random=Math.floor(Math.random()*max)+1;                // random number between 1 to max number
+console.log(random);
+
+let guess=prompt("guess the number");                      // guessing the random number
+
+while(true){
+    if(guess=="quit"){                                      //if we want quit the game 
+        console.log("user quit");
+        break;
+    }
+
+    if(guess==random){                                                    //   condition true
+        console.log("you are right! random number was",random);     
+        break;
+    }else if(guess<random){                                                 //  if the guessing number is small compared to random then suggest and try again
+        guess=prompt("your guess was to small.please try again");
+        
+    }
+    else{
+        guess=prompt("your guess was to large. please try again");             //if the guessing number is larger compared to random then suggest and try again
+    }
+}
